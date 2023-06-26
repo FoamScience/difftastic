@@ -1,1 +1,1 @@
-/home/fadeli/repos/difftastic/vendor/tree-sitter-foam/queries/highlights.scm
+/home/fadeli/repos/difftastic/vendored_parsers/tree-sitter-foam/queries/highlights.scm
