@@ -13,6 +13,6 @@ phases
 
 code
 #{
-    Info<< "---->! custom code !<----" << endl;
     // C++ comment modified
+    const auto a = doNothing();
 #};

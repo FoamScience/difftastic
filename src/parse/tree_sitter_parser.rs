@@ -371,7 +371,13 @@ pub fn from_language(language: guess::Language) -> TreeSitterConfig {
                     include_str!("../../vendored_parsers/highlights/foam.scm"),
                 )
                 .unwrap(),
-                sub_languages: vec![],
+                sub_languages: vec![
+                    TreeSitterSubLanguage {
+                        query: ts::Query::new(language, "(code (code_body) @content)")
+                            .unwrap(),
+                        parse_as: CPlusPlus,
+                    },
+                ],
             }
         }
         Gleam => {

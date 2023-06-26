@@ -11,6 +11,6 @@ phases ( oil air );
 
 code
 #{
-    Info<< "---->! custom code !<----" << endl;
     // C++ comment
+    const auto a = doSomething();
 #};
